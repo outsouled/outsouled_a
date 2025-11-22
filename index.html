@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Outsouled — Today's Drop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Outsouled</div>
+    <div class="city-toggle">
+      <button id="nycBtn" class="city active">NYC</button>
+      <button id="mumbaiBtn" class="city">Mumbai</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="card-wrap">
+      <!-- Cards will be injected here -->
+      <div id="cardContainer" class="card-container"></div>
+
+      <div class="nav">
+        <button id="prevBtn" class="nav-btn">‹</button>
+        <button id="nextBtn" class="nav-btn">›</button>
+      </div>
+    </section>
+
+    <section class="sellers" id="sellersSection">
+      <h3>Available From</h3>
+      <ul id="sellersList"></ul>
+    </section>
+
+    <section class="become-seller">
+      <h4>Want to list a sneaker?</h4>
+      <p>Quick: <a href="https://forms.gle/REPLACE_WITH_YOUR_GOOGLE_FORM" target="_blank">Submit here</a> (free)</p>
+    </section>
+  </main>
+
+  <footer class="footer">© Outsouled — Local drops for NYC & Mumbai</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

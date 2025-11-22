@@ -1,0 +1,135 @@
+:root{
+    --bg:#0f1720;
+    --card:#ffffff;
+    --muted:#9aa3ad;
+    --accent:#1f8bf1;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
+    background:linear-gradient(180deg,#071021, #0f1720);
+    color:#fff;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+  }
+  .topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px;
+    background:transparent;
+  }
+  .brand{
+    font-weight:700;
+    font-size:1.1rem;
+  }
+  .city-toggle .city{
+    margin-left:8px;
+    padding:6px 10px;
+    border-radius:8px;
+    border:none;
+    background:transparent;
+    color:var(--muted);
+  }
+  .city-toggle .active{ background:rgba(255,255,255,0.08); color:#fff }
+  
+  main{
+    padding:16px;
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    max-width:480px;
+    margin:0 auto;
+    width:100%;
+  }
+  .card-wrap{
+    position:relative;
+    height:420px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .card-container{
+    width:100%;
+    max-width:420px;
+    height:360px;
+    perspective:1200px;
+    overflow:visible;
+  }
+  .card{
+    width:100%;
+    height:100%;
+    background:var(--card);
+    color:#111;
+    border-radius:18px;
+    padding:16px;
+    box-shadow:0 10px 30px rgba(2,6,23,0.6);
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    position:absolute;
+    left:0;
+    top:0;
+    transform-origin:center;
+    transition:transform 300ms ease, opacity 300ms ease;
+  }
+  .card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px;
+    background:#eee;
+  }
+  .card h2{ margin:0; font-size:1.2rem }
+  .card .meta{ color:var(--muted); font-size:0.9rem }
+  
+  .nav{
+    position:absolute;
+    right:-10px;
+    bottom:18px;
+    display:flex;
+    gap:8px;
+  }
+  .nav-btn{
+    background:rgba(255,255,255,0.06);
+    border:none;
+    color:#fff;
+    font-size:1.6rem;
+    width:44px;
+    height:44px;
+    border-radius:50%;
+  }
+  .sellers{
+    background:rgba(255,255,255,0.03);
+    padding:12px;
+    border-radius:10px;
+  }
+  .sellers ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+  }
+  .sellers li{
+    padding:8px 4px;
+    border-bottom:1px solid rgba(255,255,255,0.03);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .sellers a{ color:var(--accent); text-decoration:none; font-weight:600 }
+  .become-seller{ color:var(--muted) }
+  
+  .footer{
+    text-align:center;
+    padding:12px;
+    font-size:0.85rem;
+    color:var(--muted);
+  }
+  @media (max-width:480px){
+    .card-wrap{ height:380px }
+    .card-container{ height:320px }
+  }
+  

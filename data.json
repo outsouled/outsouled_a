@@ -1,0 +1,42 @@
+{
+    "nyc": [
+      {
+        "id": "nj4-1",
+        "name": "Air Jordan 4 Military Blue",
+        "image": "/mnt/data/A_digital_mockup_of_a_sneaker_calendar_mobile_appl.png",
+        "releaseDate": "2025-11-20",
+        "price": 210,
+        "storeNote": "Limited release — check with seller",
+        "sellers": [
+          { "name": "NYC Sneaker Plug", "contact": "https://instagram.com/nycsneakerplug" },
+          { "name": "SoHo Resell", "contact": "https://wa.me/11234567890" }
+        ]
+      },
+      {
+        "id": "nkd-1",
+        "name": "Nike Dunk Low Retro",
+        "image": "/mnt/data/A_digital_mockup_of_a_sneaker_calendar_mobile_appl.png",
+        "releaseDate": "2025-11-21",
+        "price": 110,
+        "storeNote": "",
+        "sellers": [
+          { "name": "BK Hype", "contact": "https://instagram.com/bkhype" }
+        ]
+      }
+    ],
+    "mumbai": [
+      {
+        "id": "m-dunk-1",
+        "name": "Nike Dunk Low Mumbai Exclusive",
+        "image": "/mnt/data/A_digital_mockup_of_a_sneaker_calendar_mobile_appl.png",
+        "releaseDate": "2025-11-20",
+        "price": 9995,
+        "storeNote": "Reseller pricing may vary",
+        "sellers": [
+          { "name": "Mumbai Sneaks", "contact": "https://instagram.com/mumbaisneaks" },
+          { "name": "Hype Cartel Mumbai", "contact": "https://wa.me/919876543210" }
+        ]
+      }
+    ]
+  }
+  
