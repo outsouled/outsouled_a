@@ -1,42 +1,127 @@
 {
-    "nyc": [
-      {
-        "id": "nj4-1",
-        "name": "Air Jordan 4 Military Blue",
-        "image": "/mnt/data/A_digital_mockup_of_a_sneaker_calendar_mobile_appl.png",
-        "releaseDate": "2025-11-20",
-        "price": 210,
-        "storeNote": "Limited release — check with seller",
-        "sellers": [
-          { "name": "NYC Sneaker Plug", "contact": "https://instagram.com/nycsneakerplug" },
-          { "name": "SoHo Resell", "contact": "https://wa.me/11234567890" }
-        ]
-      },
-      {
-        "id": "nkd-1",
-        "name": "Nike Dunk Low Retro",
-        "image": "/mnt/data/A_digital_mockup_of_a_sneaker_calendar_mobile_appl.png",
-        "releaseDate": "2025-11-21",
-        "price": 110,
-        "storeNote": "",
-        "sellers": [
-          { "name": "BK Hype", "contact": "https://instagram.com/bkhype" }
-        ]
-      }
-    ],
-    "mumbai": [
-      {
-        "id": "m-dunk-1",
-        "name": "Nike Dunk Low Mumbai Exclusive",
-        "image": "/mnt/data/A_digital_mockup_of_a_sneaker_calendar_mobile_appl.png",
-        "releaseDate": "2025-11-20",
-        "price": 9995,
-        "storeNote": "Reseller pricing may vary",
-        "sellers": [
-          { "name": "Mumbai Sneaks", "contact": "https://instagram.com/mumbaisneaks" },
-          { "name": "Hype Cartel Mumbai", "contact": "https://wa.me/919876543210" }
-        ]
-      }
-    ]
+  "cities": {
+    "nyc": {
+      "label": "New York",
+      "tagline": "Resell heat, boutiques, and raffle drops in the city that never sleeps.",
+      "drops": [
+        {
+          "id": "nyc-aj4-milblue",
+          "name": "Air Jordan 4 “Military Blue”",
+          "release": "Today",
+          "price": "$210",
+          "note": "Raffle + first come, first served at select shops.",
+          "sellers": [
+            "SoHo Resell",
+            "BK Hype",
+            "LES Sneaker Plug"
+          ]
+        },
+        {
+          "id": "nyc-dunk-panda",
+          "name": "Nike Dunk Low “Panda”",
+          "release": "This week",
+          "price": "$120–$180 (market)",
+          "note": "Multiple restocks from local resellers and boutiques.",
+          "sellers": [
+            "Queens Kicks",
+            "Uptown Soles"
+          ]
+        },
+        {
+          "id": "nyc-aj1-bredtoe",
+          "name": "Air Jordan 1 “Bred Toe” (restock)",
+          "release": "Upcoming",
+          "price": "Market only",
+          "note": "GS sizes rumored to hit select stores.",
+          "sellers": [
+            "Hudson Hype",
+            "Harlem Highs"
+          ]
+        }
+      ]
+    },
+    "la": {
+      "label": "Los Angeles",
+      "tagline": "Streetwear, collabs, and fairfax-to-melrose energy.",
+      "drops": [
+        {
+          "id": "la-ts-aj1-low",
+          "name": "Travis Scott x Jordan 1 Low",
+          "release": "Upcoming",
+          "price": "Market only",
+          "note": "Private resell appointments and early pairs.",
+          "sellers": [
+            "Fairfax Heat",
+            "Melrose Vault"
+          ]
+        },
+        {
+          "id": "la-sb-la",
+          "name": "Nike SB Dunk “LA”",
+          "release": "Next week",
+          "price": "$130",
+          "note": "Skate shops and select boutiques only.",
+          "sellers": [
+            "Sunset Skate",
+            "Westside SB"
+          ]
+        }
+      ]
+    },
+    "chicago": {
+      "label": "Chicago",
+      "tagline": "Jordan history and Midwest heat from local plugs.",
+      "drops": [
+        {
+          "id": "chi-aj1-chicago",
+          "name": "Air Jordan 1 “Chicago Retro”",
+          "release": "Restock window",
+          "price": "$180–$260 (market)",
+          "note": "City classic. Very limited GS and men’s sizes.",
+          "sellers": [
+            "Chi Sole Exchange",
+            "Windy City Kicks"
+          ]
+        },
+        {
+          "id": "chi-aj3-fire-red",
+          "name": "Air Jordan 3 “Fire Red”",
+          "release": "Today",
+          "price": "$210",
+          "note": "Pairs spotted at local boutiques and mall resellers.",
+          "sellers": [
+            "South Loop Sneakers"
+          ]
+        }
+      ]
+    },
+    "atlanta": {
+      "label": "Atlanta",
+      "tagline": "City exclusives, Yeezys, and ATL-themed heat.",
+      "drops": [
+        {
+          "id": "atl-af1-atl",
+          "name": "Nike Air Force 1 “ATL”",
+          "release": "Today",
+          "price": "$130",
+          "note": "City-themed pairs at select locations only.",
+          "sellers": [
+            "Peachtree Heat",
+            "Zone 6 Kicks"
+          ]
+        },
+        {
+          "id": "atl-yeezy-350-static",
+          "name": "Yeezy 350 “Static” (pre-owned)",
+          "release": "Available",
+          "price": "Varies by condition",
+          "note": "Used & VNDS pairs with local meetups.",
+          "sellers": [
+            "Eastside Resell",
+            "Cumberland Closet"
+          ]
+        }
+      ]
+    }
   }
-  
+}

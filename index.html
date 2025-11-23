@@ -3,41 +3,127 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Outsouled — Today's Drop</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Outsouled_us – Local Sneaker Slide Deck</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="topbar">
-    <div class="brand">Outsouled</div>
-    <div class="city-toggle">
-      <button id="nycBtn" class="city active">NYC</button>
-      <button id="mumbaiBtn" class="city">Mumbai</button>
-    </div>
+    <div class="logo">Outsouled<span class="logo-us">_us</span></div>
+
+    <!-- TOP-LEVEL CITY MENU -->
+    <nav class="city-nav" id="cityNav">
+      <button class="city-tab active" data-city="nyc">New York</button>
+      <button class="city-tab" data-city="la">Los Angeles</button>
+      <button class="city-tab" data-city="chicago">Chicago</button>
+      <button class="city-tab" data-city="atlanta">Atlanta</button>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
   </header>
 
-  <main>
-    <section class="card-wrap">
-      <!-- Cards will be injected here -->
-      <div id="cardContainer" class="card-container"></div>
+  <!-- MOBILE CITY MENU -->
+  <nav class="city-nav-mobile" id="cityNavMobile">
+    <button class="city-tab active" data-city="nyc">New York</button>
+    <button class="city-tab" data-city="la">Los Angeles</button>
+    <button class="city-tab" data-city="chicago">Chicago</button>
+    <button class="city-tab" data-city="atlanta">Atlanta</button>
+  </nav>
 
-      <div class="nav">
-        <button id="prevBtn" class="nav-btn">‹</button>
-        <button id="nextBtn" class="nav-btn">›</button>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>See what’s dropping in your city today.</h1>
+        <p>
+          Outsouled_us is a city-first sneaker board showing
+          <strong>local drops & resellers</strong> in the strongest US sneaker hubs.
+        </p>
+        <p class="hero-city" id="heroCityLabel">Showing: New York</p>
+        <p class="hero-tagline" id="heroCityTagline">
+          Resell heat, boutiques, and raffle drops in the city that never sleeps.
+        </p>
+        <div class="hero-actions">
+          <a href="#deck" class="btn primary">View slide deck</a>
+          <a href="#sellers" class="btn secondary">List my store</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="phone-frame">
+          <!-- Use the existing mockup image path you have -->
+          <img
+            src="/mnt/data/A_digital_mockup_of_a_sneaker_calendar_mobile_appl.png"
+            alt="Outsouled sneaker calendar mockup"
+          />
+        </div>
       </div>
     </section>
 
-    <section class="sellers" id="sellersSection">
-      <h3>Available From</h3>
-      <ul id="sellersList"></ul>
+    <!-- SLIDE DECK SECTION -->
+    <section id="deck" class="section section-alt">
+      <div class="deck-header">
+        <h2 id="deckTitle">Slide deck – New York drops</h2>
+        <p class="section-subtitle">
+          Swipe or click through each slide to see highlighted pairs and local sellers.
+        </p>
+      </div>
+
+      <div class="slider">
+        <button class="slider-btn prev" id="prevSlide" aria-label="Previous drop">‹</button>
+
+        <div class="slider-window">
+          <div class="slider-track" id="sliderTrack">
+            <!-- Slides injected by script.js -->
+          </div>
+        </div>
+
+        <button class="slider-btn next" id="nextSlide" aria-label="Next drop">›</button>
+      </div>
+
+      <div class="slider-dots" id="sliderDots">
+        <!-- Dot indicators injected by script.js -->
+      </div>
     </section>
 
-    <section class="become-seller">
-      <h4>Want to list a sneaker?</h4>
-      <p>Quick: <a href="https://forms.gle/REPLACE_WITH_YOUR_GOOGLE_FORM" target="_blank">Submit here</a> (free)</p>
+    <!-- SELLERS CTA -->
+    <section id="sellers" class="section">
+      <h2>For local stores & resellers</h2>
+      <p class="section-subtitle">
+        Want to appear in the slide deck under your city tab? Join the early seller list.
+      </p>
+
+      <div class="seller-cta">
+        <h3>Get listed on Outsouled_us</h3>
+        <p>
+          Tell us who you are, what you sell, and which city you’re in. We’ll contact you
+          when we onboard more drops for that city.
+        </p>
+        <form
+          class="inline-form"
+          onsubmit="event.preventDefault(); alert('Thanks! You’re on the Outsouled_us seller list.');"
+        >
+          <input type="email" placeholder="you@example.com" required />
+          <select required>
+            <option value="">City</option>
+            <option value="nyc">New York</option>
+            <option value="la">Los Angeles</option>
+            <option value="chicago">Chicago</option>
+            <option value="atlanta">Atlanta</option>
+          </select>
+          <button type="submit" class="btn primary">Join as seller</button>
+        </form>
+        <p class="small-note">No spam. Only launch updates & local drop requests.</p>
+      </div>
     </section>
   </main>
 
-  <footer class="footer">© Outsouled — Local drops for NYC & Mumbai</footer>
+  <footer class="footer">
+    <div>© <span id="year"></span> Outsouled_us — local sneaker slide deck.</div>
+    <div class="footer-links">
+      <a href="#deck">Slide deck</a>
+      <a href="#sellers">For sellers</a>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
